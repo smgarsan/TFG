@@ -1,0 +1,23 @@
+@if (sessionData && mapData) {
+<main>
+    <div id="gameCard" class="card">
+        <app-map [mapData]="mapData" [currentPosition]="sessionData.currentPosition">
+        </app-map>
+    </div>
+    <div id="attributeCard" class="card">
+        <app-data-card imageSrc="../../assets/img/session.svg" title="SESSION ID" data={{globalService.sessionId}}>
+        </app-data-card>
+        <app-data-card imageSrc="../../assets/img/user.svg" title="USER" [data]="sessionData.userName">
+        </app-data-card>
+        <app-data-card imageSrc="../../assets/img/agent.svg" title="AGENT" [data]="sessionData.agentName">
+        </app-data-card>
+        <app-data-card imageSrc="../../assets/img/map.svg" title="MAP" [data]="sessionData.mapName">
+        </app-data-card>
+        <app-data-card imageSrc="../../assets/img/energy.svg" title="ENERGY" data="{{sessionData.energy}}">
+        </app-data-card>
+        <app-data-card imageSrc="../../assets/img/position.svg" title="CURRENT POSITION" data="[{{sessionData.currentPosition[0]}}, {{sessionData.currentPosition[1]}}]">
+        </app-data-card>
+    </div>
+</main>
+}
+

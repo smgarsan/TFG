@@ -1,0 +1,51 @@
+# Node.js dependencies
+node_modules/
+
+# Angular build outputs
+dist/
+out-tsc/
+# Node.js dependencies for Angular
+/Frontend/node_modules/
+/Frontend/dist/
+/Frontend/out-tsc/
+
+# Angular Cache
+/Frontend/.angular/cache/
+
+# Spring Boot build and dependencies
+/Backend/target/
+.Backend/build/
+
+# IDEs and editors
+/Backend/Store/.idea/
+/Backend/Environment/.idea/
+/Frontend/.vscode/
+
+# Logs
+**/*.log
+
+# Environment variables
+**/.env
+**/.env.*
+
+# System files
+.DS_Store
+./Backend/Store/.DS_Store
+./Backend/Environment/.DS_Store
+./Frontend/.DS_Store
+Thumbs.db
+
+# Maven specific files
+/Backend/Store/.mvn/
+/Backend/Environment/.mvn/
+!/Backend/Store/.mvn/wrapper/maven-wrapper.jar
+!/Backend/Environment/.mvn/wrapper/maven-wrapper.jar
+
+# Miscellaneous
+.npm
+.yarn
+.yarnrc
+yarn-error.log
+.pnpm-debug.log*
+.eslintcache
+

@@ -1,0 +1,12 @@
+<div class="map-container">
+  <div *ngFor="let row of rowsArray.slice().reverse(); let rowIndex = index" class="row">
+      <div *ngFor="let col of columnsArray; let colIndex = index" class="tile"
+           [style.width.px]="tileSize" [style.height.px]="tileSize"
+           [style.background-color]="tiles[(rows - rowIndex - 1) * columns + colIndex].color">
+      </div>
+  </div>
+</div>
+
+
+
+
